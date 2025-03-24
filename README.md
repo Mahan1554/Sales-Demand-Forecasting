@@ -45,7 +45,7 @@ A retail sales prediction system that forecasts product demand using machine lea
 ## 🛠️ Setup 
 Access the interface at 
 ```
-will be added soon
+https://forecastsales.streamlit.app
 ```
 
    
