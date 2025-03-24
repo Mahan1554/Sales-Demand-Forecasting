@@ -43,10 +43,16 @@ A retail sales prediction system that forecasts product demand using machine lea
 
 
 ## 🛠️ Setup 
-Access the interface at:
+Access the interface
+1. Local URL
 ```
 http://localhost:8501
 ```
+2. Network URL
+```
+http://192.168.42.211:8501
+```
+   
 
 ## 📈 Sample Output
 Prediction Interface:
