@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler
 # Sales Predictor Class
 # ---------------------------
 class SalesPredictor:
-    def __init__(self, scaler_path="C:\\Users\\mahan\\Downloads\\Play\\Projects\\scaler.pkl", 
+    def __init__(self, scaler_path="scaler.pkl", 
                  model_path="ICPS_model.pkl"):
         # Load scaler and model during initialization
         self.scaler = self.load_pickle(scaler_path)
@@ -161,8 +161,8 @@ mode = st.sidebar.radio("Choose a mode:",
 
 # Initialize predictor
 predictor = SalesPredictor(
-    scaler_path="C:\\Users\\mahan\\Downloads\\Play\\Projects\\scaler.pkl", 
-    model_path="C:\\Users\\mahan\\Downloads\\Play\\Projects\\ICPS_model.pkl"
+    scaler_path="scaler.pkl", 
+    model_path="ICPS_model.pkl"
 )
 
 # ---------------------------
