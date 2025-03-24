@@ -11,7 +11,7 @@ from sklearn.preprocessing import StandardScaler
 # ---------------------------
 class SalesPredictor:
     def __init__(self, scaler_path="C:\\Users\\mahan\\Downloads\\Play\\Projects\\scaler.pkl", 
-                 model_path="C:\\Users\\mahan\\Downloads\\Play\\Projects\\ICPS_model.pkl"):
+                 model_path="ICPS_model.pkl"):
         # Load scaler and model during initialization
         self.scaler = self.load_pickle(scaler_path)
         self.model = self.load_pickle(model_path)
