@@ -217,9 +217,16 @@ with st.sidebar:
                  "Monthly sales of an item (all stores)"),
         index=0
     )
-    
+
+
     st.markdown("---")
-    st.markdown("### ⚙️ Parameters")
+    st.markdown("### Instructions")
+
+    st.markdown("""
+    * **Item-Level Forecast:** Predict daily sales for a specific item in a store using date, store, and item IDs.
+    * **Store Analysis:** Analyze monthly demand for all items in a store by selecting year, month, and store ID.
+    * **Product Analysis:** View monthly demand for an item across all stores with year, month, and item ID inputs.
+    """)
     
     # Initialize predictor
     predictor = SalesPredictor(scaler_path="scaler.pkl", model_path="ICPS_model.pkl")
@@ -276,11 +283,6 @@ if mode == "Predict sales for an item":
                 </div>
             """, unsafe_allow_html=True)
             
-            st.markdown("### 📊 Sales Trend (Last 7 Days)")
-            st.line_chart(pd.DataFrame({
-                'Date': pd.date_range(end=selected_date, periods=7),
-                'Sales': np.random.randint(50, 150, size=7)
-            }).set_index('Date'))
 
 # ---------------------------
 # Mode 2: Monthly Sales in a Store
