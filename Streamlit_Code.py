@@ -11,7 +11,7 @@ from sklearn.preprocessing import StandardScaler
 # ---------------------------
 
 class SalesPredictor:
-    def __init__(self, scaler_path="https://github.com/Mahan1554/Sales-Demand-Forecasting/blob/main/scaler.pkl", model_path="https://github.com/Mahan1554/Sales-Demand-Forecasting/blob/main/ICPS_model.pkl"):
+    def __init__(self, scaler_path="scaler.pkl", model_path="ICPS_model.pkl"):
         # Load scaler and model during initialization
         self.scaler = self.load_pickle(scaler_path)
         self.model = self.load_pickle(model_path)
@@ -222,7 +222,7 @@ with st.sidebar:
     st.markdown("### ⚙️ Parameters")
     
     # Initialize predictor
-    predictor = SalesPredictor(scaler_path="https://github.com/Mahan1554/Sales-Demand-Forecasting/blob/main/scaler.pkl", model_path="https://github.com/Mahan1554/Sales-Demand-Forecasting/blob/main/ICPS_model.pkl")
+    predictor = SalesPredictor(scaler_path="scaler.pkl", model_path="ICPS_model.pkl")
 
 # ---------------------------
 # Main Content Sections
