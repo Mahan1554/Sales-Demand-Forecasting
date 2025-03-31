@@ -52,7 +52,8 @@ https://forecastsales.streamlit.app
 
 ## 📈 Sample Output
 Prediction Interface:
-<img width="959" alt="image" src="https://github.com/user-attachments/assets/09e59245-3948-4c54-a6b2-ac347eb8edb3" />
+
+<img width="957" alt="image" src="https://github.com/user-attachments/assets/0c736d14-b7f3-411a-8eb8-8ca8102beb5b" />
 
 
 
