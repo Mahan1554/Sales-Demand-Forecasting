@@ -1,7 +1,7 @@
 # Sales Demand Forecasting System
 
 ## 📌 Project Overview
-A retail sales prediction system that forecasts product demand using machine learning. The system helps optimize inventory management by predicting:
+A retail sales prediction system that forecasts product demand using machine learning. This system helps optimize inventory management by predicting:
 - Daily sales for specific products
 - Monthly demand across all products in a store
 - Item popularity across multiple locations
